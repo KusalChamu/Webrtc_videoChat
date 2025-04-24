@@ -24,26 +24,39 @@ This is a real-time video conferencing web application built using **WebRTC**, *
 
 ## 🧑‍💻 Installation
 
--1. **Clone the repository**
+## 🧑‍💻 Installation
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**
+   ```bash
    git clone https://github.com/your-username/Webrtc_videoChat.git
    cd Webrtc_videoChat
--2.Install dependencies
-   npm install
--3.Run the program
-   npm run dev
--4.Open the app Go to your browser and navigate to
-   http://localhost:3000
+2.Install dependencies
+```bash
+npm install
+```
+3.Run the program
+```bash
+npm run dev
+```
+4.Open the app
+Go to your browser and navigate to:
 
+```bash
+http://localhost:3000
+```
 
-   
-💡 How It Works
-When a user joins a room, a signaling connection is created with the server using Socket.io.
+## 💡 How It Works
 
-WebRTC is used to establish a direct peer-to-peer connection between users.
+- When a user joins a room, a signaling connection is established with the server using **Socket.io**.
+- **WebRTC** is used to create a direct peer-to-peer connection between the users.
+- Users can:
+  - Share audio and video in real-time.
+  - Send and receive chat messages.
+  - Share their screen with other participants.
+- All interactions happen seamlessly within the browser, enhancing the overall conferencing experience.
 
-Users can share audio/video and exchange messages in real time.
-
-Screen sharing and chat functionalities enhance the conferencing experience.
 
 🙋‍♂️ Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
