@@ -22,7 +22,6 @@ This is a real-time video conferencing web application built using **WebRTC**, *
 > If hosted: [Click here to view the live demo](https://youtu.be/jFsKI0WS2-U)
 
 
-## 🧑‍💻 Installation
 
 ## 🧑‍💻 Installation
 
