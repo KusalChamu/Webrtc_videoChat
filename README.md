@@ -24,14 +24,14 @@ This is a real-time video conferencing web application built using **WebRTC**, *
 
 ## 🧑‍💻 Installation
 
-1. **Clone the repository**
+-1. **Clone the repository**
    git clone https://github.com/your-username/Webrtc_videoChat.git
    cd Webrtc_videoChat
-2.Install dependencies
+-2.Install dependencies
    npm install
-3.Run the program
+-3.Run the program
    npm run dev
-4.Open the app Go to your browser and navigate to
+-4.Open the app Go to your browser and navigate to
    http://localhost:3000
 
 
