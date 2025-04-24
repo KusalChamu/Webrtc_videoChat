@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Video Chat</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Room Join Section -->
+        <section class="join-room-section">
+            <h2>Join a Room</h2>
+            <input type="text" id="room" placeholder="Enter Room ID" class="room-input">
+            <button onclick="joinRoom()" id="joinButton" class="btn primary">Join</button>
+        </section>
+
+        <!-- Video Area -->
+        <main class="video-chat-section">
+            <div class="video-wrapper" id="videos">
+                <div class="video-box">
+                    <video id="localVideo" autoplay playsinline muted></video>
+                    <span class="username-tag">You</span>
+                </div>
+                <!-- Remote video elements will be dynamically added here -->
+            </div>
+
+            <!-- Controls -->
+            <div class="control-panel" id="controls">
+                <button onclick="toggleMic()" id="micButton" class="btn control">🎤 Mute</button>
+                <button onclick="toggleCamera()" id="cameraButton" class="btn control">📷 Video</button>
+                <button onclick="toggleScreenShare()" id="screenShareButton" class="btn control">🖥 Share Screen</button>
+                <button onclick="endCall()" id="leaveButton" class="btn danger">🚪 Leave</button>
+            </div>
+        </main>
+
+        <!-- Chat Section -->
+        <aside class="chat-section" id="chat">
+            <header class="chat-header">💬 Chat</header>
+            <div class="chat-messages" id="chatbox"></div>
+            <div class="chat-input-area" id="inputArea">
+                <input type="text" id="messageInput" placeholder="Type a message..." class="chat-input">
+                <button onclick="sendMessage()" id="sendButton" class="btn send">➤</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
